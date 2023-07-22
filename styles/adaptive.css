@@ -1,0 +1,227 @@
+@media (max-width: 1150px) {
+    body {
+        padding: 0 16px;
+        background: url("./../images/red\ light.svg") no-repeat;
+        background-color: var(--main);
+    }
+
+    .navbar-info {
+        font-size: var(--16px);
+        margin-left: 30px;
+        flex-basis: 503px;
+        width: 100%;
+        /* min-width: 50px; */
+    }
+    .navbar-info > p {
+        margin-right: 10px;
+    }
+    .number {
+        display: none;
+    }
+    .number2 {
+        display: block;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        background: none;
+        background-color: var(--main);
+        padding: 0px 0px 0px 0px;
+    }
+
+    .navbar-logo,
+    .navbar-contacts,
+    .number,
+    .navbar-socials,
+    .about-right__button,
+    .navbar-info > p:last-child,
+    .about::before,
+    .about::after {
+        display: none;
+    }
+    .navbar {
+        padding: 0 16px;
+        height: 40px;
+        background: var(--black, #0e1014);
+        margin-top: 0px;
+    }
+
+    .navbar::before {
+        display: none;
+    }
+    .navbar-info {
+        padding-top: 25px;
+        justify-content: space-between;
+        margin: 0 auto;
+        color: var(--light-text);
+        font-size: var(--12px);
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-family: "Inter", sans-serif;
+    }
+
+    .about,
+    .footer-menu,
+    .number2 {
+        display: block;
+    }
+
+    .about {
+        height: 445px;
+        max-height: 100%;
+        background: url("./../images/bg.png") no-repeat;
+        background-size: cover;
+        padding: 0 16px;
+        margin-top: 25px;
+        width: 100%;
+        margin-bottom: 59px;
+    }
+
+    .about-left__desc {
+        margin-bottom: 45px;
+    }
+
+    .about-left__caption {
+        padding-top: 25px;
+        color: var(--light-text, #e4e5ea);
+        font-family: Inter;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .about-left__welbex {
+        margin-top: 45px;
+        margin-bottom: 40px;
+        color: #e4e5ea;
+        font-family: Inter;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+    .about-right__offers {
+        margin-bottom: 0;
+    }
+    .about-right__caption,
+    .about-right__offers,
+    .footer-menu__contacts {
+        text-align: left;
+    }
+    .about-right__caption {
+        margin-bottom: 20px;
+    }
+    .about-right__offers-card-info p {
+        display: none;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .line {
+        display: flex;
+    }
+
+    .line h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+    }
+
+    .line div {
+        display: flex;
+        height: 16px;
+        margin-right: 5px;
+    }
+
+    .line div img {
+        align-self: center;
+    }
+    footer {
+        padding: 0 16px;
+    }
+
+    .menu-container > div:last-child {
+        margin-left: 45px;
+        /* margin-right: 48px; */
+    }
+
+    .menu-container {
+        flex-basis: 100%;
+    }
+
+    .footer-menu__contacts,
+    .menu-container {
+        margin-top: 30px;
+    }
+    .footer-rights {
+        float: left;
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    .footer-menu__contacts-social-icons {
+        justify-content: flex-start;
+    }
+
+    .footer-rights {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .navbar {
+        justify-content: center;
+    }
+
+    .about-right__button {
+        display: none;
+        justify-content: center;
+    }
+    .about {
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+    }
+
+    .about-right__caption,
+    .about-right__offers,
+    .footer-menu__contacts {
+        text-align: left;
+    }
+
+    .navbar-logo,
+    .navbar-contacts,
+    .navbar-socials,
+    .about-right__button,
+    .navbar-info > p:last-child,
+    .about::before,
+    .about::after {
+        display: none;
+    }
+
+    .footer-menu {
+        flex-wrap: wrap;
+    }
+    .navbar-info {
+        margin-left: 0px;
+    }
+
+    .menu-container:last-child {
+        text-align: right;
+    }
+
+    footer {
+        padding-top: 0px;
+    }
+}

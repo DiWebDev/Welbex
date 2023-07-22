@@ -1,0 +1,292 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&family=Montserrat:wght@300&family=Nunito:wght@300;400;500;600;700;900&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800&family=Montserrat:wght@300&family=Nunito:wght@300;400;500;600;700;900&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+   /* colors */
+   --main: #0e1014;
+   --light-text: #e4e5ea;
+   --blue-button: #4077f3;
+   --light-gray: #656566;
+   --red: #181114;
+
+   /* fs */
+   --10px: 10px;
+   --12px: 12px;
+   --14px: 14px;
+   --16px: 16px;
+   --18px: 18px;
+   --48px: 48px;
+   --72px: 72px;
+}
+
+body {
+   background-position: top;
+   background: url("./../images/red\ light.svg") no-repeat;
+   background-color: var(--main);
+}
+
+body::before {
+}
+
+.container {
+   max-width: 1140px;
+   margin: 0 auto;
+}
+
+/* navbar */
+
+.navbar {
+   max-width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 57px;
+}
+.navbar::before {
+   content: "";
+   background-image: url("./../images/circles/purpleball.png");
+   background-repeat: no-repeat;
+   position: absolute;
+   display: block;
+   top: 0;
+   bottom: 0;
+   left: 868px;
+   right: 0;
+}
+
+.navbar::after {
+   content: "";
+   background-image: url("./../images/circles/redball.png");
+   background-repeat: no-repeat;
+   position: absolute;
+   display: block;
+   top: 83px;
+   bottom: 0;
+   left: 519px;
+   right: 0;
+}
+.logo {
+   margin-bottom: 10px;
+}
+
+.welbex-desc {
+   color: var(--light-gray);
+   font-size: var(--10px);
+   font-family: "Montserrat", sans-serif;
+}
+
+.navbar-info {
+   display: flex;
+   flex-basis: 503px;
+   justify-content: space-between;
+   color: var(--light-text);
+   /*align-items: center;*/
+   font-size: var(--16px);
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+}
+.navbar-contacts {
+   display: flex;
+   flex-basis: 143px;
+   /* align-items: center;*/
+   font-size: var(--16px);
+   color: var(--light-text) !important;
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+}
+
+.number {
+   color: var(--light);
+}
+
+.navbar-socials {
+   display: flex;
+   flex-basis: 100px;
+   justify-content: space-between;
+   /* align-items: center;*/
+}
+
+.navbar-socials div {
+   width: 20px;
+}
+
+.social-icon {
+   width: 16px;
+}
+
+/* about */
+
+.about {
+   margin-top: 94px;
+   max-width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 69px;
+}
+
+.about::before {
+   content: "";
+   background-image: url("./../images/circles/smallredball.png");
+   background-repeat: no-repeat;
+   position: absolute;
+   display: block;
+   top: 547px;
+   bottom: 0;
+   left: 851px;
+   right: 0;
+}
+
+.about-left__caption {
+   font-size: var(--48px);
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   color: var(--light-text);
+}
+
+.about-left__welbex {
+   font-size: var(--72px);
+   background: linear-gradient(90deg, rgba(252, 176, 69, 1) 0%, rgba(253, 93, 106, 1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-weight: 900;
+}
+
+.about-left__desc {
+   font-family: "Montserrat", sans-serif;
+   font-size: var(--18px);
+   color: var(--light-text);
+   margin-top: 30px;
+}
+
+.about-right {
+   color: var(--light-text);
+   display: flex;
+   flex-direction: column;
+   font-family: "Inter", sans-serif;
+   flex-basis: 291px;
+}
+.about-right__caption {
+   font-size: var(--18px);
+   font-weight: 500;
+   margin-bottom: 40px;
+   text-align: right;
+}
+
+.about-right__welbex-free {
+   background: linear-gradient(90deg, rgba(252, 137, 59, 1) 0%, rgba(252, 35, 31, 1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+.about-right__welbex-appointment {
+   background: linear-gradient(90deg, rgba(252, 176, 69, 1) 0%, rgba(252, 112, 51, 1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+.about-right__offers {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   text-align: right;
+   margin-bottom: 61px;
+}
+.about-right__offers-card {
+   display: flex;
+   justify-content: space-between;
+}
+
+.line {
+   display: none;
+}
+.about-right__offers-card-info {
+   display: flex;
+   flex-direction: column;
+   flex-basis: 50%;
+}
+
+.about-right__offers-card-info h2 {
+   font-size: var(--18px);
+   font-weight: 500;
+   text-transform: uppercase;
+   margin-bottom: 6px;
+}
+
+.about-right__offers-card-info p {
+   font-size: var(--16px);
+   font-weight: 400;
+}
+
+.about-right__button {
+   position: relative;
+}
+.about-right__button button {
+   background-color: var(--blue-button);
+   font-size: var(--16px);
+   font-weight: 500;
+   width: 262px;
+   height: 61px;
+   position: absolute;
+   right: 0;
+}
+
+/* footer */
+
+footer {
+   padding-top: 55px;
+   color: white;
+}
+
+.footer-menu {
+   display: flex;
+   justify-content: space-between;
+   font-family: "Inter", sans-serif;
+}
+
+.footer-menu h3 {
+   color: var(--light-gray);
+   font-size: var(--14px);
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+.menu-container {
+   max-width: 408px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer-menu ul li {
+   color: var(--light-text);
+   font-size: var(--16px);
+   font-weight: 400;
+   margin-bottom: 10px;
+}
+
+.footer-menu__contacts {
+   text-align: right;
+}
+
+.footer-menu__contacts-social-icons {
+   display: flex;
+   justify-content: flex-end;
+   gap: 10px;
+}
+
+.footer-menu__contacts-social-icons div {
+   width: 20px;
+}
+
+.footer-rights {
+   float: right;
+   text-align: right;
+   font-size: var(--12px);
+   color: var(--light-gray);
+   font-family: "Montserrat", sans-serif;
+}
